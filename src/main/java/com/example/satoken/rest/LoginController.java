@@ -33,12 +33,13 @@ public class LoginController {
 
     // 前后端分离模式的登录样例    ---- http://localhost:8081/NotCookie/doLogin2?name=zhang&pwd=123456
     @RequestMapping("doLogin2")
-    public SaResult doLogin2(String name, String pwd) {
+    public SaResult doLogin2(String name, String pwd, Integer expireTime) {
 
         if("zhang".equals(name) && "123456".equals(pwd)) {
 
             // 会话登录
-            StpUtil.login(10001);
+            StpUtil.login(10001, expireTime);
+            StpUtil.login(10001, expireTime * 10);
 
             // 与常规登录不同点之处：这里需要把 Token 信息从响应体中返回到前端
             SaTokenInfo tokenInfo = StpUtil.getTokenInfo();
