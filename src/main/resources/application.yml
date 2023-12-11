@@ -18,4 +18,4 @@ sa-token:
   # 是否输出操作日志
   is-log: true
   # jwt秘钥
-  jwt-secret-key: jwtsecretkey
+  jwt-secret-key: cheche_jwt_access_token_key
