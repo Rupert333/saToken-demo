@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/at-check/")
-public class AtCheckController {
+public class MethodCheckController {
 
     /*
      * 前提1：首先调用登录接口进行登录
