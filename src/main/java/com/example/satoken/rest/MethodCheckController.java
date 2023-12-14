@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/at-check/")
+@SaCheckPermission(value = "user.add", orRole = "admin")
 public class MethodCheckController {
 
     /*
