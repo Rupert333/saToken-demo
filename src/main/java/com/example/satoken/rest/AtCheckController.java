@@ -30,7 +30,7 @@ public class AtCheckController {
 
     // 权限校验   ---- http://localhost:8081/at-check/checkPermission
     //      只有具有 user.add 权限的账号才可以进入方法 
-    @SaCheckPermission("user.add")
+    @SaCheckPermission(value ="user.add")
     @RequestMapping("checkPermission")
     public SaResult checkPermission() {
         // ... 
