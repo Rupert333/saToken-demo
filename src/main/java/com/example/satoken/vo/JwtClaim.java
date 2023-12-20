@@ -9,7 +9,6 @@ import static com.example.satoken.constants.Constants.ACCESS_TOKEN_EXPIRE;
 
 
 /**
- * @author by shanxf
  * @desc
  * @Date 2021/5/7 18:32
  */
